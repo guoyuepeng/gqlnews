@@ -5,7 +5,11 @@
   "author": "Tyler Reckart <tyler.reckart@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "babel-node ./server.js"
+    "start2": "babel-node ./server/c2.js",
+    "dev": "nodemon --exec babel-node ./server/complexQuery.js",
+    "start1": "babel-node ./server/c1.js",
+    "start3": "babel-node ./server/complexQuery.js",
+    "dev4": "nodemon --exec babel-node ./server/c4.js"
   },
   "dependencies": {
     "babel-cli": "^6.26.0",
@@ -23,6 +27,7 @@
     "express": "^4.16.2",
     "express-graphql": "^0.6.11",
     "graphql": "^0.12.3",
+    "graphql-tools": "^4.0.5",
     "nodemon": "^1.14.11",
     "prettier": "^1.10.2"
   }
